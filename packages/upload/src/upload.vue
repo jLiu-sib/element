@@ -94,11 +94,10 @@ export default {
           const fileType = Object.prototype.toString.call(processedFile);
 
           if (fileType === '[object File]' || fileType === '[object Blob]') {
-            /*if (fileType === '[object Blob]') {
-              processedFile = new File([processedFile], rawFile.name, {
-                type: rawFile.type
-              });
-            }*/
+            if (fileType === '[object Blob]') {
+                processedFile.lastModifiedDate = new Date();
+                processedFile.name = rawFile.name;
+            }
             for (const p in rawFile) {
               if (rawFile.hasOwnProperty(p)) {
                 processedFile[p] = rawFile[p];
