@@ -1,7 +1,7 @@
 {
-  "name": "element-ui",
+  "name": "element-ui-sib",
   "version": "2.10.1",
-  "description": "A Component Library for Vue.js.",
+  "description": "does not convert Blob to File with file constructor in Upload component based on element-ui v2.10.1",
   "main": "lib/element-ui.common.js",
   "files": [
     "lib",
@@ -49,8 +49,10 @@
   "keywords": [
     "eleme",
     "vue",
-    "components"
+    "components",
+    "edge file constructor"
   ],
+  "author": "J. Liu",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ElemeFE/element/issues"
